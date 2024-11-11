@@ -301,3 +301,34 @@ docker-compose exec web python manage.py createsuperuser
 ### 3. Acessar a aplicação
 
 A aplicação estará disponível no `http://localhost`, onde o Nginx estará servindo a aplicação Django através do Gunicorn.
+
+<br>
+
+---
+
+<br>
+
+## Situações Adversas
+
+### 1. Precisar remover todos os Volumes e recriar
+
+Para remover todos os volumes e recriar tudo novamente, execute o seguinte comando:
+
+```bash
+docker-compose down -v
+```
+
+Em seguida, execute novamente os comandos da seção **2. Criar o superusuário Django**
+
+<br>
+
+### 2. Precisar apenas atualizar o conteúdo do container da aplicação Django
+
+Essa ação é útil quando há apenas a modificação de um bloco de código do projeto, ou implementação de uma nova funcionalidade. Para isso, execute os seguintes comandos:
+
+
+```bash
+docker-compose up -d --build web
+```
+
+Isso irá subir o novo código fonte para o container da aplicação, que no exemplo chama-se `web`.
