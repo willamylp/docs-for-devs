@@ -88,14 +88,14 @@ O `Dockerfile` define a imagem Docker para a aplicação Django. Ele instala as 
 # Imagem base do Python 3.12 (slim)
 FROM python:3.12-slim
 
+# Define o diretório de trabalho
+WORKDIR /app
+
 # Instala as dependências do sistema operacional 
 RUN apt-get update && apt-get install -y curl
 
 # Copia o script wait-for-it.sh para o container
 COPY wait-for-it.sh /app/
-
-# Define o diretório de trabalho
-WORKDIR /app
 
 # Copia o arquivo requirements.txt com as dependências do projeto
 COPY requirements.txt /app/
