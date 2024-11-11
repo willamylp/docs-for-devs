@@ -318,14 +318,13 @@ Para remover todos os volumes e recriar tudo novamente, execute o seguinte coman
 docker-compose down -v
 ```
 
-Em seguida, execute novamente os comandos da seção **2. Criar o superusuário Django**
+Em seguida, execute novamente os comandos da seção **1. Construir as imagens e iniciar os containers**
 
 <br>
 
 ### 2. Precisar apenas atualizar o conteúdo do container da aplicação Django
 
 Essa ação é útil quando há apenas a modificação de um bloco de código do projeto, ou implementação de uma nova funcionalidade. Para isso, execute os seguintes comandos:
-
 
 ```bash
 docker-compose up -d --build web
