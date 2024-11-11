@@ -321,7 +321,7 @@ docker-compose down -v
 Se necessário, execute o comando abaixo para limpar todo o Docker completamente:
 
 ```bash
-docker system prune --all --force --volumes
+docker system prune -a
 ```
 
 Em seguida, execute novamente os comandos da seção **1. Construir as imagens e iniciar os containers**
