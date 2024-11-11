@@ -318,6 +318,12 @@ Para remover todos os volumes e recriar tudo novamente, execute o seguinte coman
 docker-compose down -v
 ```
 
+Se necessário, execute o comando abaixo para limpar todo o Docker completamente:
+
+```bash
+docker system prune --all --force --volumes
+```
+
 Em seguida, execute novamente os comandos da seção **1. Construir as imagens e iniciar os containers**
 
 <br>
