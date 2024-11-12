@@ -98,6 +98,9 @@ RUN apt-get update && apt-get install -y curl
 # Copia o script wait-for-it.sh para o container
 COPY wait-for-it.sh /app/
 
+# Atribui permissão de execução para o wait-for-it.sh
+RUN chmod +x /app/wait-for-it.sh
+
 # Copia o arquivo requirements.txt com as dependências do projeto
 COPY requirements.txt /app/
 
