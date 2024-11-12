@@ -17,6 +17,7 @@ project-root/
     ├── other_apps/ (Outros diretórios de Apps do projeto)
     ├── static/
     ├── media/
+    ├── wait-for-it.sh  
     ├── Dockerfile  
     ├── docker-compose.yml  
     ├── nginx.conf  
