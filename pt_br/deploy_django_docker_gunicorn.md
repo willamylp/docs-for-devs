@@ -272,7 +272,7 @@ DB_PORT=5432
 
 #### ⚠️ **Observação Importante:**
 
-Como está sendo usando a configuração `networks` no `docker-compose.yml`, o *host* do Banco de Dados no arquivo `.env` precisa ser o nome do serviço do PostgreSQL, que no caso é `db`, e não `localhost` ou `127.0.0.1`.
+Como está sendo usado a configuração `networks` no `docker-compose.yml`, o *host* do Banco de Dados no arquivo `.env` precisa ser o nome do serviço do PostgreSQL, que no caso é `db`, e não `localhost` ou `127.0.0.1`.
 
 <br>
 
