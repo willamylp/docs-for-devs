@@ -56,6 +56,9 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
         'PORT': config('DB_PORT'),
+        'OPTIONS': {
+            'options': f'-c search_path={config("DB_SCHEMA", default='public')}'
+        }
     }
 }
 ```
@@ -268,6 +271,7 @@ DB_USER=postgres
 DB_PASSWORD=admin@123  
 DB_HOST=db  
 DB_PORT=5432
+DB_SCHEMA=schema_db
 ```
 
 #### ⚠️ **Observação Importante:**
